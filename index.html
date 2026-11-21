@@ -457,6 +457,14 @@ html[lang="en"] .steps li::before{content:"Step " counter(s)}
 .fcontact a{color:#dbeee3}
 .fcontact a:hover{color:#fff;text-decoration:underline}
 .fcontact li:hover .fi{background:var(--leaf);color:#fff}
+.stat{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center}
+.stat .si{grid-row:1;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.14);color:#bff3d3;border:1px solid rgba(255,255,255,.2)}
+.stat strong{grid-row:1;grid-column:2;font-size:2.2rem;line-height:1}
+.stat span:not(.si){grid-column:1/-1;margin-top:12px}
+.hero .stat:hover .si{background:#fff;color:#0a5a33}
+.stat strong{white-space:nowrap}
+.stats .stat:last-child strong{font-size:1.55rem}
+.stat .si{transition:background .25s ease,color .25s ease}
 </style>
 </head>
 <body>
@@ -504,10 +512,10 @@ html[lang="en"] .steps li::before{content:"Step " counter(s)}
         </div>
       </div>
       <div class="stats" aria-label="Năng lực GTEC">
-        <div class="stat"><strong>20</strong><span>năm kinh nghiệm trong lĩnh vực môi trường</span></div>
-        <div class="stat"><strong>~700</strong><span>dự án và doanh nghiệp đã được tư vấn hồ sơ</span></div>
-        <div class="stat"><strong>2</strong><span>đơn vị liên danh có phòng thí nghiệm VILAS ISO/IEC 17025</span></div>
-        <div class="stat"><strong>1 TS · 2 ThS</strong><span>cùng đội ngũ kỹ sư môi trường, xây dựng, điện, thủy lợi</span></div>
+        <div class="stat"><span class="si"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.4L7 22l5-3 5 3-1.2-8.6"/></svg></span><strong>20+</strong><span>năm kinh nghiệm trong lĩnh vực môi trường</span></div>
+        <div class="stat"><span class="si"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></span><strong>~700</strong><span>dự án và doanh nghiệp đã được tư vấn hồ sơ</span></div>
+        <div class="stat"><span class="si"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21.5h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></svg></span><strong>2</strong><span>đơn vị liên danh có phòng thí nghiệm VILAS ISO/IEC 17025</span></div>
+        <div class="stat"><span class="si"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><strong>1 TS · 2 ThS</strong><span>cùng đội ngũ kỹ sư môi trường, xây dựng, điện, thủy lợi</span></div>
       </div>
     </div>
     <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c160 30 320 30 480 8s320-48 480-30 320 46 480 22v30H0z" fill="var(--bg)"/></svg>
