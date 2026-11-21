@@ -485,6 +485,18 @@ html,body{max-width:100%;overflow-x:clip}
   .actions .btn{flex:1 1 auto;text-align:center}
   .banner-wave,.wave{height:36px}
 }
+
+/* ===== Điện thoại: mốc phát triển trở về dạng danh sách gọn như ban đầu ===== */
+@media (max-width:900px){
+  .story-stack .timeline{display:grid;grid-template-columns:1fr;gap:14px;border-left:2px solid var(--line);margin-top:18px}
+  .story-stack .timeline::before{display:none}
+  .story-stack .timeline li{padding:0 0 0 18px}
+  .story-stack .timeline li::before{left:-7px;top:6px;width:12px;height:12px;border:0;box-shadow:none}
+  .story-stack .timeline li>div{background:none;border:0;padding:0;border-radius:0;height:auto}
+  .story-stack .timeline li:hover>div{transform:none;box-shadow:none}
+  .story-stack .timeline b{display:inline;font-size:1rem;color:var(--water);margin:0}
+  .story-stack .timeline b::after{content:" · ";color:var(--muted);font-weight:400}
+}
 </style>
 </head>
 <body>
