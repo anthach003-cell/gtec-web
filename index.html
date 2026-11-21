@@ -7,7 +7,7 @@
 <meta name="description" content="Công ty Cổ phần Công nghệ xanh (GTEC), Hải Phòng: tư vấn hồ sơ môi trường, thiết kế thi công hệ thống xử lý nước thải, khí thải, thu gom chất thải từ năm 2005.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Lora:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Barlow:wght@600;700;800&family=Lora:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
 <style>
 :root{
   /* Bố cục: thanh menu cố định, mỗi mục là một trang riêng có dải tiêu đề; màu lấy từ logo (xanh lá) và nước */
@@ -20,7 +20,8 @@
   --water:#1d6a86;
   --tint:#e3efe7;
   --red:#c42b26;
-  --font:"Be Vietnam Pro", "Segoe UI", Roboto, Arial, sans-serif;
+  --font:"IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --display:"Barlow", "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){
@@ -518,6 +519,12 @@ html,body{max-width:100%;overflow-x:clip}
   .team strong{grid-row:1;grid-column:2;margin-top:0;font-size:1.8rem;line-height:1}
   .team span{grid-column:1/-1;grid-row:2;align-self:start}
 }
+/* ===== Phông chữ cứng cáp, chuyên nghiệp hơn ===== */
+h1,h2,h3,.stat strong,.team strong,.why .n,.svc .num,.law-no,.timeline b,.banner h1,.band h2,.badge20 strong{font-family:var(--display);letter-spacing:-.005em}
+h1,.banner h1{font-weight:800;letter-spacing:-.01em}
+h2{font-weight:700}
+h3{font-weight:700}
+.kicker{letter-spacing:.1em}
 </style>
 </head>
 <body>
