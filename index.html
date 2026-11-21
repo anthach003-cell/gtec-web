@@ -465,6 +465,26 @@ html[lang="en"] .steps li::before{content:"Step " counter(s)}
 .stat strong{white-space:nowrap}
 .stats .stat:last-child strong{font-size:1.55rem}
 .stat .si{transition:background .25s ease,color .25s ease}
+
+/* ===== Sửa lệch trên điện thoại ===== */
+html,body{max-width:100%;overflow-x:clip}
+@media (max-width:640px){
+  .bar{gap:10px;min-height:60px}
+  .brand{flex-direction:column;align-items:flex-start;gap:2px}
+  .brand .logo{height:32px}
+  .brand .slogan{border-left:0;padding-left:0;font-size:.78rem;white-space:nowrap}
+  .lang{margin-right:4px}
+  .lang button{padding:6px 8px}
+  .menu-btn{padding:7px 10px}
+  .stats{grid-template-columns:1fr 1fr;gap:10px}
+  .stat{grid-template-columns:1fr;padding:14px}
+  .stat .si{width:38px;height:38px;border-radius:10px}
+  .stat strong{grid-column:1;grid-row:auto;margin-top:10px;font-size:1.7rem;white-space:normal}
+  .stats .stat:last-child strong{font-size:1.35rem}
+  .stat span:not(.si){margin-top:6px;font-size:.88rem}
+  .actions .btn{flex:1 1 auto;text-align:center}
+  .banner-wave,.wave{height:36px}
+}
 </style>
 </head>
 <body>
